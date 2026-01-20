@@ -1,1 +1,3 @@
-curl http://127.0.0.1:8001/api/sflp_data/
+#!/bin/bash
+source ../.env
+curl http://127.0.0.1:${PORT}/api/sflp_data/

@@ -47,17 +47,13 @@ RequestSerialized = Tuple[str, str, Dict[str, str], Optional[str], List[str]]
 class ApiClient:
     """Generic API client for OpenAPI client library builds.
 
-    OpenAPI generic API client. This client handles the client-
-    server communication, and is invariant across implementations. Specifics of
-    the methods and models for each application are generated from the OpenAPI
+    OpenAPI generic API client. This client handles the client-server communication, and is invariant across implementations. Specifics of the methods and models for each application are generated from the OpenAPI
     templates.
 
     :param configuration: .Configuration object for this client
     :param header_name: a header to pass when making calls to the API.
-    :param header_value: a header value to pass when making calls to
-        the API.
-    :param cookie: a cookie to include in the header when making calls
-        to the API
+    :param header_value: a header value to pass when making calls to the API.
+    :param cookie: a cookie to include in the header when making calls to the API
     """
 
     PRIMITIVE_TYPES = (float, bool, bytes, str, int)
